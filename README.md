@@ -6,7 +6,7 @@ Small embedded C++ practice tasks using Arduino Framework and PlatformIO.
 
 - [x] 01 LED Toggle Module
 - [x] 02 LED Brightness Stepper
-- [ ] 03 Smooth Fade
+- [x] 03 Smooth Fade
 - [ ] 04 Button Raw Read
 - [ ] 05 Button Toggle Event
 - [ ] 06 Debounced Button
