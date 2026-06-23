@@ -9,7 +9,7 @@ Small embedded C++ practice tasks using Arduino Framework and PlatformIO.
 - [x] 03 Smooth Fade
 - [x] 04 Button Raw Read
 - [x] 05 Button Toggle Event
-- [ ] 06 Debounced Button
+- [x] 06 Debounced Button
 - [ ] 07 Hold To Increase Brightness
 - [ ] 08 Click Changes Brightness Level
 - [ ] 09 Traffic Light FSM
