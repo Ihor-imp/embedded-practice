@@ -8,7 +8,7 @@ Small embedded C++ practice tasks using Arduino Framework and PlatformIO.
 - [x] 02 LED Brightness Stepper
 - [x] 03 Smooth Fade
 - [x] 04 Button Raw Read
-- [ ] 05 Button Toggle Event
+- [x] 05 Button Toggle Event
 - [ ] 06 Debounced Button
 - [ ] 07 Hold To Increase Brightness
 - [ ] 08 Click Changes Brightness Level
