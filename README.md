@@ -12,7 +12,7 @@ Small embedded C++ practice tasks using Arduino Framework and PlatformIO.
 - [x] 06 Debounced Button
 - [x] 07 Hold To Increase Brightness
 - [x] 08 Click Changes Brightness Level
-- [ ] 09 Traffic Light FSM
+- [x] 09 Traffic Light FSM
 - [ ] 10 Traffic Light With Pedestrian Button
 - [ ] 11 Mini Desk Lamp Controller
 - [ ] 12 Mini Alarm Indicator
