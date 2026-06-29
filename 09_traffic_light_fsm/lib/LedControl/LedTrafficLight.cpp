@@ -11,47 +11,49 @@ void TrafficLight::begin()
     greenLed.begin();
     yellowLed.begin();
 
-    redLed.on();
-    greenLed.off();
-    yellowLed.off();
-    lastChangeTime = millis();
     currentState = State::Red;
+
+    redLed.on();
+    yellowLed.off();
+    greenLed.off();
+
+    lastChangeTime = millis();
 }
 
 void TrafficLight::update()
 {
-
-    if (currentState == State::Red)
+    uint32_t now = millis();
+    switch (currentState)
     {
-        if (millis() - lastChangeTime >= timeForRed)
+    case State::Red:
+        if (now - lastChangeTime >= timeForRed)
         {
             redLed.off();
             yellowLed.off();
             greenLed.on();
-            lastChangeTime = millis();
+            lastChangeTime = now;
             currentState = State::Green;
         }
-    }
-    if (currentState == State::Green)
-    {
-        if (millis() - lastChangeTime >= timeForGreen)
+        break;
+    case State::Green:
+        if (now - lastChangeTime >= timeForGreen)
         {
             redLed.off();
             yellowLed.on();
             greenLed.off();
-            lastChangeTime = millis();
+            lastChangeTime = now;
             currentState = State::Yellow;
         }
-    }
-    if (currentState == State::Yellow)
-    {
-        if (millis() - lastChangeTime >= timeForYellow)
+        break;
+    case State::Yellow:
+        if (now - lastChangeTime >= timeForYellow)
         {
             redLed.on();
             yellowLed.off();
             greenLed.off();
-            lastChangeTime = millis();
+            lastChangeTime = now;
             currentState = State::Red;
         }
+        break;
     }
 }

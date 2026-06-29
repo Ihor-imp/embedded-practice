@@ -3,9 +3,22 @@
 #include "ledCpntr.h"
 #include "Button.h"
 
+struct TrafficConfig
+{
+    uint8_t redPin;
+    uint8_t yellowPin;
+    uint8_t greenPin;
+    uint8_t buttonPin;
+
+    uint32_t redTime;
+    uint32_t yellowTime;
+    uint32_t greenTime;
+};
+
 class Traffic
 {
 private:
+    TrafficConfig config;
     enum class State
     {
         RED,
@@ -13,9 +26,6 @@ private:
         GREEN
     };
 
-    const uint32_t timeForGreen = 3000;
-    const uint32_t timeForRed = 3000;
-    const uint32_t timeForYellow = 2000;
 
     uint32_t lastChangeLed = 0;
 
@@ -29,8 +39,8 @@ private:
     bool pedestrianRequest = false;
 
 public:
-    Traffic(uint8_t redPin, uint8_t yellowPin, uint8_t greenPin, uint8_t buttonPin);
-    
+    Traffic(const TrafficConfig& config);
+
     void begin();
     void update();
 };

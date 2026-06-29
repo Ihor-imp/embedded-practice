@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "AlarmIndicator.h"
 
-AlarmIndicator alarmIndicator(10, 4);
+AlarmIndicator alarmIndicator(10, 4, 10000, 5000);
 
 void setup()
 {

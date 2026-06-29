@@ -1,7 +1,7 @@
 #include "AlarmIndicator.h"
 
-AlarmIndicator::AlarmIndicator(uint8_t ledPin, uint8_t buttonPin)
-    : led(ledPin), button(buttonPin)
+AlarmIndicator::AlarmIndicator(uint8_t ledPin, uint8_t buttonPin, uint32_t warningInterval, uint32_t alarmInterval)
+    : led(ledPin), button(buttonPin), warningIntervalW(warningInterval), alarmIntervalW(alarmInterval)
 {
 }
 
@@ -46,7 +46,7 @@ void AlarmIndicator::working()
     }
     else if (currentMode == Mode::Warning)
     {
-        if (millis() - lastBlinkTime >= warningInterval)
+        if (millis() - lastBlinkTime >= warningIntervalW)
         {
             if (!blinkState)
             {
@@ -63,7 +63,7 @@ void AlarmIndicator::working()
     }
     else if (currentMode == Mode::Alarm)
     {
-        if (millis() - lastBlinkTime >= alarmInterval)
+        if (millis() - lastBlinkTime >= alarmIntervalW)
         {
             if (!blinkState)
             {

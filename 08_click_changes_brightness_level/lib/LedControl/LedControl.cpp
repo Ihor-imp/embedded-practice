@@ -50,29 +50,12 @@ void Led::setBrightness(uint8_t value)
 
 void Led::nextBrightnessLevel()
 {
-    if (currentLevel == 0)
+    static const uint8_t levels[5] = {0, 64, 128, 192, 255};
+    uint8_t levels[5] = {0, 64, 128, 192, 255};
+    setBrightness(levels[currentLevel]);
+    currentLevel = currentLevel + 1;
+    if (currentLevel >= 5)
     {
-        setBrightness(0);
-        currentLevel = currentLevel + 1;
-    }
-    else if (currentLevel == 1)
-    {
-        setBrightness(64);
-        currentLevel = currentLevel + 1;
-    }
-    else if (currentLevel == 2)
-    {
-        setBrightness(128);
-        currentLevel = currentLevel + 1;
-    }
-    else if (currentLevel == 3)
-    {
-        setBrightness(192);
-        currentLevel = currentLevel + 1;
-    }
-    else if (currentLevel == 4)
-    {
-        setBrightness(255);
         currentLevel = 0;
     }
 }

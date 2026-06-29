@@ -1,14 +1,25 @@
 #include <Arduino.h>
 #include "Traffic.h"
 
-Traffic trafficLight(11, 12, 10, 4);
+TrafficConfig trafficConfig = {
+    11,    // redPin
+    10,    // yellowPin
+    9,     // greenPin
+    4,     // buttonPin
+
+    3000,  // redTime
+    2000,  // yellowTime
+    3000   // greenTime
+};
+
+Traffic traffic(trafficConfig);
 
 void setup()
 {
-  trafficLight.begin();
+  traffic.begin();
 }
 
 void loop()
 {
-  trafficLight.update();
+  traffic.update();
 }

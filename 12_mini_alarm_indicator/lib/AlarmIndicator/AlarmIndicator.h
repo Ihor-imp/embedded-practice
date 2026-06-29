@@ -7,8 +7,8 @@
 class AlarmIndicator
 {
     private:
-    const uint32_t warningInterval = 500;
-    const uint32_t alarmInterval = 100;
+    const uint32_t warningIntervalW = 0;
+    const uint32_t alarmIntervalW = 0;
 
     uint32_t lastBlinkTime = 0;
 
@@ -28,7 +28,7 @@ class AlarmIndicator
     void working();
 
     public:
-    AlarmIndicator(uint8_t ledPin, uint8_t buttonPin);
+    AlarmIndicator(uint8_t ledPin, uint8_t buttonPin, uint32_t warningInterval, uint32_t alarmInterval);
 
     void begin();
     void update();
