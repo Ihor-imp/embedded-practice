@@ -15,4 +15,4 @@ Small embedded C++ practice tasks using Arduino Framework and PlatformIO.
 - [x] 09 Traffic Light FSM
 - [x] 10 Traffic Light With Pedestrian Button
 - [x] 11 Mini Desk Lamp Controller
-- [ ] 12 Mini Alarm Indicator
+- [x] 12 Mini Alarm Indicator
