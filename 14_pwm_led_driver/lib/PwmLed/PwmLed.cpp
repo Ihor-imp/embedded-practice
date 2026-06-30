@@ -10,7 +10,7 @@ void PwmLed::begin()
     pinMode(config.pin, OUTPUT);
     brightness = 0;
     stateLed = false;
-    off();
+    analogWrite(config.pin, 0);
     currentStatus = PwmLedStatus::Ok;
     initialized = true;
 }
@@ -49,23 +49,24 @@ void PwmLed::toggle()
     if (stateLed)
     {
         off();
-    } else {
+    }
+    else
+    {
         on();
     }
-    
 }
 
-PwmLedStatus PwmLed::getStatus() const;
+PwmLedStatus PwmLed::getStatus() const
 {
     return currentStatus;
 }
 
-bool PwmLed::isOn() const;
+bool PwmLed::isOn() const
 {
     return stateLed;
 }
 
-uint8_t PwmLed::getBrightness() const;
+uint8_t PwmLed::getBrightness() const
 {
     return brightness;
 }

@@ -19,8 +19,8 @@ Small embedded C++ practice tasks using Arduino Framework and PlatformIO.
 
 ## Block 2 — Custom Driver Architecture
 
-- [ ] 13 AnalogInput Driver
-- [ ] 14 PwmLed Driver
+- [x] 13 AnalogInput Driver
+- [x] 14 PwmLed Driver
 - [ ] 15 Buzzer Driver
 - [ ] 16 RgbLed Driver
 - [ ] 17 Servo Driver
