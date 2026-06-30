@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"name": "14_pwm_led_driver",
+			"path": "../../../../14_pwm_led_driver"
+		}
+	],
+	"settings": {}
+}
