@@ -23,7 +23,7 @@ Small embedded C++ practice tasks using Arduino Framework and PlatformIO.
 - [x] 14 PwmLed Driver
 - [x] 15 Buzzer Driver
 - [x] 16 RgbLed Driver
-- [ ] 17 Servo Driver
+- [x] 17 Servo Driver
 - [ ] 18 HCSR04 Ultrasonic Driver
 - [ ] 19 Encoder Driver
 - [ ] 20 Motor Driver
