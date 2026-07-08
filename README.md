@@ -26,7 +26,7 @@ Small embedded C++ practice tasks using Arduino Framework and PlatformIO.
 - [x] 17 Servo Driver
 - [x] 18 HCSR04 Ultrasonic Driver
 - [x] 19 Encoder Driver
-- [ ] 20 Motor Driver
+- [x] 20 Motor Driver
 - [ ] 21 Serial Command Parser
 - [ ] 22 EEPROM Settings Driver
 - [ ] 23 Display/OLED Wrapper Driver
