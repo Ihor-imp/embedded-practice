@@ -29,5 +29,5 @@ Small embedded C++ practice tasks using Arduino Framework and PlatformIO.
 - [x] 20 Motor Driver
 - [x] 21 Serial Command Parser
 - [x] 22 EEPROM Settings Driver
-- [ ] 23 Display/OLED Wrapper Driver
+- [x] 23 Display/OLED Wrapper Driver
 - [ ] 24 Integrated Mini System
